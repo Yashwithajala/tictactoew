@@ -4,7 +4,7 @@ let currentPlayer = 'X'; // Start with player 'X' (Pink)
 let gameBoard = ['', '', '', '', '', '', '', '', ''];
 let gameOver = false;
 
-const xImage = 'X1.png'; // Pink player's image
+const xImage = 'X.png'; // Pink player's image
 const oImage = '0.png'; // Blue player's image
 
 // Create cells dynamically
