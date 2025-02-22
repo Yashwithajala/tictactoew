@@ -36,7 +36,7 @@ body {
 }
 
 .cell {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); 
     border: 2px solid #ccc;
     cursor: pointer;
     display: flex;
@@ -48,13 +48,15 @@ body {
 }
 
 .cell:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(240, 240, 240, 0.8); 
 }
 
 .cell img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
+    opacity: 1;
 }
+
 
 #message {
     margin-top: 10px;
@@ -91,3 +93,4 @@ h1 {
     opacity: 70%;
     padding: 10px;
 }
+
