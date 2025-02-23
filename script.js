@@ -37,7 +37,6 @@ function handleCellClick(event) {
 function switchPlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // Switch between X (Pink) and O (Blue)
 }
-
 function checkWin() {
     const winPatterns = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
@@ -51,6 +50,10 @@ function checkWin() {
             gameOver = true;
             // Update the message to "Blue Wins" or "Pink Wins"
             message.textContent = gameBoard[a] === 'X' ? "HOORAYY PINK WON!" : "HOORAYY BLUE WON!";
+            
+            // Change message color based on the winner
+            message.style.color = gameBoard[a] === 'X' ? '#DA498D' : '#219B9D';
+
             highlightWinningCells(pattern);
             return;
         }
@@ -60,8 +63,10 @@ function checkWin() {
     if (!gameBoard.includes('')) {
         gameOver = true;
         message.textContent = "It's a Tie!";
+        message.style.color = '#4e4e4c';  // Default tie color
     }
 }
+
 
 function highlightWinningCells(pattern) {
     pattern.forEach(index => {
