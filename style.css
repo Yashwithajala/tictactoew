@@ -63,12 +63,14 @@ body {
     margin-top: 10px;
     font-size: 25px;
     font-weight: bold;
-    color: #818C78;
+    text-align: center; /* Ensure the text is centered */
     background-color: rgba(240, 240, 240, 0.8);
     background-blend-mode: lighten;
     padding: 8px;
-    text-align:center;
+    padding-left: 14px;
+    
 }
+
 
 button {
     padding: 10px 20px;
