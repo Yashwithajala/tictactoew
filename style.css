@@ -20,8 +20,8 @@ body {
     background-size: cover;
     
     /* Set a fixed width and height to keep the container square */
-    width: 600px;  /* 3 cells * 100px each + 20px padding */
-    height: 480px; /* Same as width to keep it square */
+    width: 1000px;  /* 3 cells * 100px each + 20px padding */
+    height: 500px; /* Same as width to keep it square */
 }
 
 * {
